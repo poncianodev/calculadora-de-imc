@@ -50,18 +50,24 @@
       </section>
 
       <section id="imc-form">
-        <form action="">
+        <div class="calculation-container">
           <div class="height-container">
             <label for="height">Altura (ex.: 1.70)</label>
-            <input type="text" name="height" id="height" placeholder="Altura" />
-            <button>Calcular</button>
+            <input
+              type="text"
+              step="0.01"
+              name="height"
+              id="height"
+              placeholder="Altura"
+            />
+            <button id="imc-calculate">Calcular</button>
           </div>
           <div class="weight-container">
             <label for="weight">Peso (ex.: 69,2)</label>
             <input type="text" name="weight" id="weight" placeholder="Peso" />
-            <button>Limpar</button>
+            <button id="imc-clear">Limpar</button>
           </div>
-        </form>
+        </div>
 
         <div id="imc-result-container">
           <h4>
