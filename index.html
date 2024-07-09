@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7d03cfc5b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon-poncianodev.png"
+      type="image/x-icon"
+    />
+    <title>Calculadora de IMC | Poncianodev</title>
+  </head>
+  <body>
+    <header>
+      <div id="hero-img">
+        <h1 id="title"><span>Indíce</span> de Massa Corporal</h1>
+      </div>
+    </header>
+
+    <main>
+      <section id="explain">
+        <h2>Cálculo de IMC</h2>
+
+        <p>
+          IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+          Organização Mundial de Saúde para calcular o peso ideal de cada
+          pessoa.<br />
+        </p>
+        <p>
+          O índice é calculado da seguinte maneira: divide-se o peso do paciente
+          pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso
+          normal quando o resultado do IMC está entre 18,5 e 24,9.<br />
+        </p>
+        <p>
+          Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo
+          e compare com os índices da tabela. Importante: siga os exemplos e use
+          pontos como separadores.
+        </p>
+      </section>
+
+      <section id="imc-form">
+        <form action="">
+          <div class="height-container">
+            <label for="height">Altura (ex.: 1.70)</label>
+            <input type="text" name="height" id="height" placeholder="Altura" />
+            <button>Calcular</button>
+          </div>
+          <div class="weight-container">
+            <label for="weight">Peso (ex.: 69,2)</label>
+            <input type="text" name="weight" id="weight" placeholder="Peso" />
+            <button>Limpar</button>
+          </div>
+        </form>
+
+        <div id="imc-result-container">
+          <h4>
+            Seu IMC é:
+            <p id="imc-result"></p>
+          </h4>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        src="./assets/img/logo-poncianodev-branco.png"
+        alt="Logo Poncianodev"
+      />
+
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

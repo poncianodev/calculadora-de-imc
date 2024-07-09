@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0f1216;
+  color: #fafafa;
+}
+
+span {
+  color: #a6f750;
+}
+
+#hero-img {
+  width: 100%;
+  height: 20rem;
+  background-image: url(../assets/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#hero-img::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#title {
+  position: absolute;
+  color: #fafafa;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+}
+
+#explain {
+  margin: 5rem 0 3rem;
+  text-align: center;
+}
+
+#explain h2 {
+  color: #a6f750;
+  margin-bottom: 2rem;
+}
+
+#explain p {
+  width: 60%;
+  margin: 1rem auto;
+  line-height: 25px;
+}
+
+#imc-form {
+  margin: 2rem 0 5rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#height,
+#weight {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #383c44;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: #181c23;
+  color: #fafafa;
+  transition: border 0.4s ease-in-out;
+}
+
+#height:focus,
+#weight:focus {
+  border: 1px solid #a6f750;
+}
+
+.height-container,
+.weight-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.height-container button,
+.weight-container button {
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.height-container button {
+  background-color: transparent;
+  border: 1px solid #a6f750;
+  color: #a6f750;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.height-container button:hover {
+  background-color: #a6f750;
+  color: #000;
+}
+
+.weight-container button {
+  background-color: transparent;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.weight-container button:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+
+#imc-result-container h4 {
+  margin: 5rem auto 0;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #7ebb3d;
+  color: #000;
+  width: 10rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0d0f13;
+  padding: 1rem;
+}
+
+footer img {
+  width: 200px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a i {
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.social-icons a i:hover {
+  color: #a6f750;
+}
