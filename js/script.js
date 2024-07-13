@@ -24,9 +24,18 @@ window.onload = () => {
     input.value = maskedValue;
   }
 
-  // Aplicando a máscara no evento input do peso, para deixar o formato em 00,0 (Ex.: 60,0)
+  // Aplicando a máscara no evento input do peso, para deixar o formato em 00,0 ou 000,00(Ex.: 60,0)
   peso.addEventListener("input", (event) => {
-    maskInput(event, "000,0");
+    const inputValue = event.target.value;
+    let mask = "00,0";
+
+    if (inputValue.length === 5) {
+      mask = "000,0";
+    } else if (inputValue.length === 6) {
+      mask = "";
+    }
+
+    maskInput(event, mask);
   });
 
   // Aplicando a máscara no evento input da altura, para deixar o formato em 0.00 (Ex.: 1.70)
