@@ -1,4 +1,4 @@
-# Desafio Bootcamp - iTalents
+# Desafio Calculadora de IMC | Bootcamp Back-end iTalents
 
 Este projeto foi desenvolvido para o Módulo 1 do Bootcamp Fundamentos de Back-end Development da iTalents.
 
